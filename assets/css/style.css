@@ -58,6 +58,7 @@ header a {
 /* move nav to the right side, 7 px form top and bottom and 0 left and right */
 header nav {
   margin: 15px 20px; 
+  float: right;
 }
 
 /* allows nav ul to take up the space that it needs*/
@@ -131,6 +132,21 @@ header nav ul li a:hover {
   header nav ul li a {
     font-size: 15px;
   }
+
+  .bio h2{
+    margin-bottom: 0px;
+    font-size: 20px;
+  }
+  
+  .bio img{
+    margin: 20px auto;
+    width: 40%;
+  }
+  
+  .bio p {
+    margin: 0px auto 30px auto;
+    font-size: 16px;
+  }
 }
   
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -145,6 +161,12 @@ header nav ul li a:hover {
     text-shadow: var(--smallest-red-shadow);
     margin: 0;
   } 
+
+  .bio p {
+    margin: 0px auto 30px auto;
+    font-size: 12px;
+  }
+
 }
   
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
