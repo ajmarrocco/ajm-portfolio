@@ -14,6 +14,7 @@
   --smallest-red-shadow: var(--tertiary-color) .5px .5px;
   --iamge-shadow: 5px 5px var(--secondary-color);
   --blue-shadow: var(--secondary-color) 1px 1px;
+  --border-rad: 15px;
 }
 
   /* more on this crazy alphanumerical value in a minute! */  
@@ -87,7 +88,7 @@ header nav ul li a:hover {
   text-shadow: var(--small-red-shadow);
 }
 
-.bio h2{
+.bio h2, .port h2{ 
   text-align: center;
   margin: 25px 0px 10px 0px;
   font-size: 26px;
@@ -99,7 +100,7 @@ header nav ul li a:hover {
   text-align: center;
   margin: 50px auto;
   display: block;
-  border-radius: 15%;
+  border-radius: var(--border-rad);
   filter: drop-shadow(5px 5px #0c099c);
 }
 
@@ -110,6 +111,44 @@ header nav ul li a:hover {
   margin: 0px auto 30px auto;
   font-size: 20px;
   text-shadow: var(--blue-shadow)
+}
+
+.run-buddy h3 { 
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  text-shadow: var(--blue-shadow);
+  position: relative;
+  top: 50px;
+  z-index: 2;
+}
+
+.run-buddy h3 span{
+  background: var(--tertiary-color);
+  padding: 5px;
+  border-radius: var(--border-rad);
+  opacity: .85;
+}
+
+.run-buddy a img{ 
+  text-align: center;
+  margin: 10px auto 10px auto;
+  width: 75%;
+  display: block;
+  border-radius: var(--border-rad);
+  filter: drop-shadow(5px 5px #0c099c);
+}
+
+.top-projects{
+  flex: 1;
+}
+
+.card {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
