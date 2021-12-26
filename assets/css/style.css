@@ -100,8 +100,13 @@ header nav ul li a:hover {
   text-align: center;
   margin: 50px auto;
   display: block;
+}
+
+.bio img, .run-buddy a img, .card a img{
+  border-style: solid;
+  border-width: 10px;
   border-radius: var(--border-rad);
-  filter: drop-shadow(5px 5px #0c099c);
+  border-color: var(--secondary-color);
 }
 
 .bio p {
@@ -113,7 +118,7 @@ header nav ul li a:hover {
   text-shadow: var(--blue-shadow)
 }
 
-.run-buddy h3 { 
+.run-buddy h3, .card h3 { 
   text-align: center;
   margin-top: 10px;
   font-size: 20px;
@@ -123,32 +128,38 @@ header nav ul li a:hover {
   z-index: 2;
 }
 
-.run-buddy h3 span{
+.run-buddy h3 span, .card h3 span{
   background: var(--tertiary-color);
   padding: 5px;
   border-radius: var(--border-rad);
   opacity: .85;
 }
 
-.run-buddy a img{ 
+.run-buddy a img, .card a img{ 
   text-align: center;
   margin: 10px auto 10px auto;
-  width: 75%;
   display: block;
-  border-radius: var(--border-rad);
-  filter: drop-shadow(5px 5px #0c099c);
 }
 
-.top-projects{
+.run-buddy a img{
+  width: 75%;
+}
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
   flex: 1;
+  padding: 50px;
+  justify-content: space-evenly;
 }
 
 .card {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  margin: 15px;
+  flex: 0 0 300px;
+}
+
+.card a img{
+  width: 650px;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
