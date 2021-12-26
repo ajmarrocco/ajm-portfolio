@@ -118,6 +118,11 @@ header nav ul li a:hover {
   text-shadow: var(--blue-shadow)
 }
 
+/* So margins aren't clickable in run buddy image */
+.run-buddy { 
+  text-align: center;
+}
+
 .run-buddy h3, .card h3 { 
   text-align: center;
   margin-top: 10px;
@@ -136,9 +141,9 @@ header nav ul li a:hover {
 }
 
 .run-buddy a img, .card a img{ 
-  text-align: center;
+  /* text-align: center; */
   margin: 10px auto 10px auto;
-  display: block;
+  /* display: block; */
 }
 
 .run-buddy a img{
@@ -159,7 +164,7 @@ header nav ul li a:hover {
 }
 
 .card a img{
-  width: 650px;
+  width: 500px;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -197,6 +202,15 @@ header nav ul li a:hover {
     margin: 0px auto 30px auto;
     font-size: 16px;
   }
+
+  .projects{
+    padding: 0px 50px;
+  }
+
+  .card a img{
+    width: 300px;
+  }
+  
 }
   
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -237,4 +251,13 @@ header nav ul li a:hover {
     padding-bottom: 15px;
     /* margin: 0; */
   }
+
+  .card a img{
+    width: 200px;
+  }
+
+  .run-buddy h3, .card h3 { 
+    font-size: 15px;
+  }
+
 }
