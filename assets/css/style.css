@@ -15,7 +15,7 @@
   --blue-shadow: var(--secondary-color) 2px 2px;
   --small-blue-shadow: var(--secondary-color) 1px 1px;
   --border-rad: 15px;
-  --border-width: 5px
+  --border-width: 5px;
 }
 
   /* more on this crazy alphanumerical value in a minute! */  
@@ -101,9 +101,6 @@ header nav ul li a:hover {
   text-align: center;
   margin: 20px auto;
   display: block;
-}
-
-.bio img, .run-buddy a img, .card a img{
   border-style: solid;
   border-width: var(--border-width);
   border-radius: var(--border-rad);
@@ -126,6 +123,13 @@ header nav ul li a:hover {
   margin: 0px auto;
   text-align: center;
   width: 75%;
+}
+
+.run-buddy a img, .card a img{
+  border-style: solid;
+  border-width: var(--border-width);
+  border-radius: var(--border-rad);
+  border-color: var(--tertiary-color);
 }
 
 /* So margins aren't clickable in run buddy image */
@@ -188,7 +192,7 @@ header nav ul li a:hover {
   justify-content: space-between;
 }
 
-.link{
+.link {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -200,17 +204,13 @@ header nav ul li a:hover {
   width: 100px;
 }
 
-.resume{
-  text-align: center;
+.pdf-icon a img{
+  width: 200px;
+  margin: 20px auto;
 }
 
-embed{
-  margin: 20px;
-  width: 50%;
-  height: 600px;
-  /* text-align: center; */
-  /* display: block; */
-
+.resume {
+  text-align: center;
 }
 
 footer{
@@ -250,7 +250,6 @@ footer h2, footer h3{
 
   .bio h2{
     margin-bottom: 0px;
-    font-size: 20px;
   }
   
   .bio img{
@@ -295,6 +294,10 @@ footer h2, footer h3{
     width: 75px;
   }
 
+  .pdf-icon a img{
+    width: 150px;
+  }
+
 }
   
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -330,6 +333,10 @@ footer h2, footer h3{
 
   .icon a img{
     width: 50px;
+  }
+
+  .pdf-icon a img{
+    width: 100px;
   }
 
   footer h2, footer h3{
