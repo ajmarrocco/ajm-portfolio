@@ -350,10 +350,11 @@ footer h2, footer h3{
     /* margin: 0; */
   }
 
-    /* changes h3 font size for card */
-    .run-buddy h3, .card h3 { 
-      font-size: 15px;
-    }
+  /* changes h3 font size for card */
+  .run-buddy h3, .card h3 { 
+    font-size: 15px;
+    top: 30px;
+  }
 
   /* changes flex basis for card */
   .card{
