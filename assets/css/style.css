@@ -12,8 +12,8 @@
   --red-shadow: var(--tertiary-color) 2px 2px;
   --small-red-shadow: var(--tertiary-color) 1px 1px;
   --smallest-red-shadow: var(--tertiary-color) .5px .5px;
-  --iamge-shadow: 5px 5px var(--secondary-color);
-  --blue-shadow: var(--secondary-color) 1px 1px;
+  --blue-shadow: var(--secondary-color) 2px 2px;
+  --small-blue-shadow: var(--secondary-color) 1px 1px;
   --border-rad: 15px;
   --border-width: 5px
 }
@@ -93,7 +93,7 @@ header nav ul li a:hover {
   text-align: center;
   margin: 35px auto 10px auto;
   font-size: 26px;
-  /* text-shadow: var(--blue-shadow); */
+  /* text-shadow: var(--small-blue-shadow); */
 }
 
 .bio img{
@@ -116,7 +116,7 @@ header nav ul li a:hover {
   display: flex;
   margin: 0px auto 30px auto;
   font-size: 20px;
-  text-shadow: var(--blue-shadow)
+  text-shadow: var(--small-blue-shadow)
 }
 
 .line-break{
@@ -137,7 +137,7 @@ header nav ul li a:hover {
   text-align: center;
   margin-top: 10px;
   font-size: 20px;
-  text-shadow: var(--blue-shadow);
+  text-shadow: var(--small-blue-shadow);
   position: relative;
   top: 50px;
   z-index: 2;
@@ -198,6 +198,33 @@ header nav ul li a:hover {
 
 .icon a img{
   width: 100px;
+}
+
+.resume{
+  text-align: center;
+}
+
+embed{
+  margin: 20px;
+  width: 50%;
+  height: 600px;
+  /* text-align: center; */
+  /* display: block; */
+
+}
+
+footer{
+  margin-top: 20px;
+  margin-bottom: 0px;
+  background-color: var(--tertiary-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer h2, footer h3{
+  padding: 20px;
+  text-shadow: var(--blue-shadow);
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -304,5 +331,16 @@ header nav ul li a:hover {
   .icon a img{
     width: 50px;
   }
-  
+
+  footer h2, footer h3{
+    text-shadow: var(--small-blue-shadow);
+  }
+
+  footer h2{
+    font-size: 15px;
+  }
+
+  footer h3{
+    font-size: 13px;
+  }
 }
