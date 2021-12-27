@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* variables */
 :root {
   --primary-color: #ffffff;
   --secondary-color: #0c099c;
@@ -12,13 +13,13 @@
   --red-shadow: var(--tertiary-color) 2px 2px;
   --small-red-shadow: var(--tertiary-color) 1px 1px;
   --smallest-red-shadow: var(--tertiary-color) .5px .5px;
-  --iamge-shadow: 5px 5px var(--secondary-color);
-  --blue-shadow: var(--secondary-color) 1px 1px;
+  --blue-shadow: var(--secondary-color) 2px 2px;
+  --small-blue-shadow: var(--secondary-color) 1px 1px;
   --border-rad: 15px;
-  --border-width: 5px
+  --border-width: 5px;
 }
 
-  /* more on this crazy alphanumerical value in a minute! */  
+/* body styling image background and font */  
 body {
   color: var(--primary-color);
   font-family: "Lucida Console", Courier, monospace;
@@ -29,7 +30,7 @@ body {
   
 }
 
-/* apply styles to <header> */
+/* header styling and flex */
 header {
   padding: 15px 40px;
   background-color: var(--secondary-color);
@@ -42,37 +43,35 @@ header {
   z-index: 9999;
 }
 
+/* h1 margin size */
 header h1 {
   margin: 5px;
 }
 
+/* shadow around h1 a in header*/
 header h1 a{
   text-shadow: var(--red-shadow);
-}
-
-header a {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: bold;
   font-size: 40px;
 }
 
-/* move nav to the right side, 7 px form top and bottom and 0 left and right */
+/* nav margin size */
 header nav {
   margin: 15px 20px; 
-  float: right;
+  /* float: right; */
 }
 
-/* allows nav ul to take up the space that it needs*/
+/* spacing for nav ul*/
 header nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* align-items: center; */
   list-style: none;
 }
 
-/* Changes the text and position of the anchors in the ul and li for the nav   */
+/* Sizing and position for ul and li for the nav */
 header nav ul li a {
   margin: 0 20px;
   padding: 5px 15px;
@@ -82,6 +81,7 @@ header nav ul li a {
   text-shadow: var(--small-red-shadow);
 }
 
+/* Adds background for ul and li for the nav when it is hovered by mouse */
 header nav ul li a:hover {
   background: var(--primary-color);
   color: var(--secondary-color);
@@ -89,36 +89,41 @@ header nav ul li a:hover {
   text-shadow: var(--small-red-shadow);
 }
 
-.bio h2, .port h2{ 
+/* Styling for h2 in bio and port */
+.bio h2, .port h2, .contact-info h2, .resume h2{ 
   text-align: center;
   margin: 35px auto 10px auto;
   font-size: 26px;
-  /* text-shadow: var(--blue-shadow); */
 }
 
+/* Shadow for h2 in bio and contact-info */
+.bio h2, .contact-info h2{
+  text-shadow: var(--blue-shadow);
+}
+
+/* styling of img in bio */
 .bio img{
   width: 25%;
   text-align: center;
   margin: 20px auto;
   display: block;
-}
-
-.bio img, .run-buddy a img, .card a img{
   border-style: solid;
   border-width: var(--border-width);
   border-radius: var(--border-rad);
   border-color: var(--secondary-color);
 }
 
+/* styling of p in bio */
 .bio p {
   text-align: center;
   width: 50%;
   display: flex;
   margin: 0px auto 30px auto;
   font-size: 20px;
-  text-shadow: var(--blue-shadow)
+  text-shadow: var(--small-blue-shadow)
 }
 
+/* creates line above h2 for port, contact-me and resume */
 .line-break{
   color: var(--primary-color);
   border-top: 3px solid;
@@ -128,21 +133,28 @@ header nav ul li a:hover {
   width: 75%;
 }
 
+/* Shadow for h2 in port and resume */
+.port h2, .resume h2{
+  text-shadow: var(--red-shadow);
+}
+
 /* So margins aren't clickable in run buddy image */
 .run-buddy { 
   text-align: center;
 }
 
+/* styling of h3 in run-buddy and card */
 .run-buddy h3, .card h3 { 
   text-align: center;
   margin-top: 10px;
   font-size: 20px;
-  text-shadow: var(--blue-shadow);
+  text-shadow: var(--small-blue-shadow);
   position: relative;
   top: 50px;
   z-index: 2;
 }
 
+/* border around just h3 and not row */
 .run-buddy h3 span, .card h3 span{
   background: var(--tertiary-color);
   padding: 5px;
@@ -150,27 +162,21 @@ header nav ul li a:hover {
   opacity: .85;
 }
 
-.run-buddy a img { 
-  /* text-align: center; */
-  margin: 0px auto 10px auto;
-  /* display: block; */
+/* border around img in run-buddy and card */
+.run-buddy a img, .card a img{
+  border-style: solid;
+  border-width: var(--border-width);
+  border-radius: var(--border-rad);
+  border-color: var(--tertiary-color);
 }
 
-.run-buddy a img{
+/* styling img in just run-buddy */
+.run-buddy a img { 
+  margin: 0px auto 10px auto;
   width: 75%;
 }
 
-.card a img{ 
-  text-align: center;
-  margin: 0px auto 10px auto;
-  /* display: block; */
-}
-
-
-.port h2 {
-  border-bottom: 3px var(--primary-color);
-}
-
+/* wraps the projects and spaces them evenly */
 .projects{
   display: flex;
   flex-wrap: wrap;
@@ -179,73 +185,115 @@ header nav ul li a:hover {
   justify-content: space-evenly;
 }
 
+/* margin of each card div */
 .card {
   margin: 15px;
   flex: 0 0 300px;
 }
 
+/* size of each a img in card div */
 .card a img{
   width: 500px;
 }
 
+/* wraps the contact section and and sizes */
 .contact{
-  /* display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between; */
-} 
-
-.link{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
 }
 
+/* wraps the link and spaces them */
+.link {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 20px auto;
+}
+
+/* sizes a img in icon*/
 .icon a img{
   width: 100px;
 }
 
+/* centers resume pdf icon */
+.resume {
+  text-align: center;
+}
+
+/* sizes a img in pdf-icon*/
+.pdf-icon a img{
+  width: 200px;
+  margin: 20px auto;
+}
+
+/* styles footer */
+footer{
+  margin-top: 20px;
+  margin-bottom: 0px;
+  background-color: var(--tertiary-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* styles h2 and h3 in footer */
+footer h2, footer h3{
+  padding: 20px;
+  text-shadow: var(--blue-shadow);
+}
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
+/* this will be applied on any screen smaller than 980px */
 @media screen and (max-width: 980px) {
-  header {
-    /* this will be applied on any screen smaller than 980px */
+
+  /* centers contents and removes bottom padding in header */
+  header {    
     justify-content: center;
-    /* align-items: center; */
     position: relative;
+    padding-bottom: 0;
   }
 
+  /* font size for h1 a in header */
   header h1 a{
     font-size: 30px;
   }
   
+  /* width for nav ul header */
   header nav ul {
     width: 100%;
   }
 
+  /* font size for nav ul li a in header */
   header nav ul li a {
     font-size: 15px;
   }
 
+  /* removes margin at h2 in bio */
   .bio h2{
     margin-bottom: 0px;
-    font-size: 20px;
   }
   
+  /* changes img width and margin */
   .bio img{
     margin: 20px auto;
     width: 40%;
   }
   
+  /* changes size of p in bio */
   .bio p {
     margin: 0px auto 30px auto;
     font-size: 16px;
   }
 
+  /* changes padding in projects */
   .projects{
     padding: 0px 50px;
   }
 
+  /* changes a img width in card */
   .card a img{
     width: 300px;
   }
@@ -253,51 +301,92 @@ header nav ul li a:hover {
 }
   
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
+
+/* this will be applied on any screen smaller than 768px */
 @media screen and (max-width: 768px) {
 
-  /* So hover background doesn't overlap */
-  /* header nav ul li {
-    padding: 0 15px;
-  } */
-
+  /* changes shadow and margin in nav ul li a in header */
   header nav ul li a {
     text-shadow: var(--smallest-red-shadow);
     margin: 0;
   } 
 
+  /* changes size of p in bio */
   .bio p {
     margin: 0px auto 30px auto;
     font-size: 12px;
   }
 
+  /* changes a img width in icon */
+  .icon a img{
+    width: 75px;
+  }
+
+  /* changes a img width in icon */
+  .pdf-icon a img{
+    width: 150px;
+  }
 }
   
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
+/* this will be applied on any screen smaller than 575px */
 @media screen and (max-width: 575px) {
 
-  header h1 {
-  /* this will be applied on any screen smaller than 575px */
   /* Centers h1 in header */
+  header h1 {  
     text-align: center;
   }
 
+  /* font size for h1 a in header */
   header h1 a{
     font-size: 26px;
     text-shadow: var(--small-red-shadow);
   }
 
+  /* changes shadow and margin in nav ul li a in header */
   header nav ul li{
     padding-bottom: 15px;
     /* margin: 0; */
   }
 
+    /* changes h3 font size for card */
+    .run-buddy h3, .card h3 { 
+      font-size: 15px;
+    }
+
+  /* changes flex basis for card */
+  .card{
+    flex: 0 0 200px;
+  }
+
+  /* changes a img size for card */
   .card a img{
-    text-align: center;
     width: 200px;
   }
 
-  .run-buddy h3, .card h3 { 
+  /* changes a img size for icon */
+  .icon a img{
+    width: 50px;
+  }
+
+  /* changes a img size for pdf-icon */
+  .pdf-icon a img{
+    width: 100px;
+  }
+
+  /* changes h2 and h3 text shadow in footer */
+  footer h2, footer h3{
+    text-shadow: var(--small-blue-shadow);
+  }
+
+  /* changes h2 font size in footer */
+  footer h2{
     font-size: 15px;
   }
 
+  /* changes h3 font size in footer */
+  footer h3{
+    font-size: 13px;
+  }
 }
