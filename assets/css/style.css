@@ -15,6 +15,7 @@
   --iamge-shadow: 5px 5px var(--secondary-color);
   --blue-shadow: var(--secondary-color) 1px 1px;
   --border-rad: 15px;
+  --border-width: 5px
 }
 
   /* more on this crazy alphanumerical value in a minute! */  
@@ -90,21 +91,21 @@ header nav ul li a:hover {
 
 .bio h2, .port h2{ 
   text-align: center;
-  margin: 25px 0px 10px 0px;
+  margin: 35px auto 10px auto;
   font-size: 26px;
-  text-shadow: var(--blue-shadow);
+  /* text-shadow: var(--blue-shadow); */
 }
 
 .bio img{
   width: 25%;
   text-align: center;
-  margin: 50px auto;
+  margin: 20px auto;
   display: block;
 }
 
 .bio img, .run-buddy a img, .card a img{
   border-style: solid;
-  border-width: 10px;
+  border-width: var(--border-width);
   border-radius: var(--border-rad);
   border-color: var(--secondary-color);
 }
@@ -116,6 +117,15 @@ header nav ul li a:hover {
   margin: 0px auto 30px auto;
   font-size: 20px;
   text-shadow: var(--blue-shadow)
+}
+
+.line-break{
+  color: var(--primary-color);
+  border-top: 3px solid;
+  padding-top: 20px;
+  margin: 0px auto;
+  text-align: center;
+  width: 75%;
 }
 
 /* So margins aren't clickable in run buddy image */
@@ -140,9 +150,9 @@ header nav ul li a:hover {
   opacity: .85;
 }
 
-.run-buddy a img, .card a img{ 
+.run-buddy a img { 
   /* text-align: center; */
-  margin: 10px auto 10px auto;
+  margin: 0px auto 10px auto;
   /* display: block; */
 }
 
@@ -150,11 +160,22 @@ header nav ul li a:hover {
   width: 75%;
 }
 
+.card a img{ 
+  text-align: center;
+  margin: 0px auto 10px auto;
+  /* display: block; */
+}
+
+
+.port h2 {
+  border-bottom: 3px var(--primary-color);
+}
+
 .projects{
   display: flex;
   flex-wrap: wrap;
   flex: 1;
-  padding: 50px;
+  padding: 10px;
   justify-content: space-evenly;
 }
 
@@ -165,6 +186,24 @@ header nav ul li a:hover {
 
 .card a img{
   width: 500px;
+}
+
+.contact{
+  /* display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between; */
+}
+
+.link{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.icon a img{
+  width: 100px;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -253,6 +292,7 @@ header nav ul li a:hover {
   }
 
   .card a img{
+    text-align: center;
     width: 200px;
   }
 
