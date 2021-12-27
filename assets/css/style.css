@@ -51,10 +51,6 @@ header h1 {
 /* shadow around h1 a in header*/
 header h1 a{
   text-shadow: var(--red-shadow);
-}
-
-/* remove decoration of a and sizing */
-header a {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: bold;
@@ -94,10 +90,14 @@ header nav ul li a:hover {
 }
 
 /* Styling for h2 in bio and port */
-.bio h2, .port h2{ 
+.bio h2, .port h2, .contact-info h2, .resume h2{ 
   text-align: center;
   margin: 35px auto 10px auto;
   font-size: 26px;
+}
+
+/* Shadow for h2 in bio and contact-info */
+.bio h2, .contact-info h2{
   text-shadow: var(--blue-shadow);
 }
 
@@ -133,12 +133,9 @@ header nav ul li a:hover {
   width: 75%;
 }
 
-/* border around img in run-buddy and card */
-.run-buddy a img, .card a img{
-  border-style: solid;
-  border-width: var(--border-width);
-  border-radius: var(--border-rad);
-  border-color: var(--tertiary-color);
+/* Shadow for h2 in port and resume */
+.port h2, .resume h2{
+  text-shadow: var(--red-shadow);
 }
 
 /* So margins aren't clickable in run buddy image */
@@ -163,6 +160,14 @@ header nav ul li a:hover {
   padding: 5px;
   border-radius: var(--border-rad);
   opacity: .85;
+}
+
+/* border around img in run-buddy and card */
+.run-buddy a img, .card a img{
+  border-style: solid;
+  border-width: var(--border-width);
+  border-radius: var(--border-rad);
+  border-color: var(--tertiary-color);
 }
 
 /* styling img in just run-buddy */
@@ -345,6 +350,11 @@ footer h2, footer h3{
     /* margin: 0; */
   }
 
+    /* changes h3 font size for card */
+    .run-buddy h3, .card h3 { 
+      font-size: 15px;
+    }
+
   /* changes flex basis for card */
   .card{
     flex: 0 0 200px;
@@ -353,11 +363,6 @@ footer h2, footer h3{
   /* changes a img size for card */
   .card a img{
     width: 200px;
-  }
-
-  /* changes h3 font size for card */
-  .run-buddy h3, .card h3 { 
-    font-size: 15px;
   }
 
   /* changes a img size for icon */
