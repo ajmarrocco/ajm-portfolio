@@ -150,7 +150,7 @@ header nav ul li a:hover {
   font-size: 20px;
   text-shadow: var(--small-blue-shadow);
   position: relative;
-  top: 50px;
+  top: 40px;
   z-index: 2;
 }
 
@@ -159,7 +159,11 @@ header nav ul li a:hover {
   background: var(--tertiary-color);
   padding: 5px;
   border-radius: var(--border-rad);
-  opacity: .85;
+}
+
+/* font size of span span */
+.run-buddy h3 span span, .card h3 span span{
+  font-size: 16px;
 }
 
 /* border around img in run-buddy and card */
@@ -288,6 +292,17 @@ footer h2, footer h3{
     font-size: 16px;
   }
 
+  /* font size of span span */
+  .run-buddy h3, .card h3 {
+    font-size: 16px;
+    top: 35px;
+  }
+
+  /* font size of span span */
+  .run-buddy h3 span span, .card h3 span span{
+  font-size: 12px;
+  }
+
   /* changes padding in projects */
   .projects{
     padding: 0px 50px;
@@ -352,8 +367,13 @@ footer h2, footer h3{
 
   /* changes h3 font size for card */
   .run-buddy h3, .card h3 { 
-    font-size: 15px;
+    font-size: 12px;
     top: 30px;
+  }
+ 
+  /* font size of span span */
+  .run-buddy h3 span span, .card h3 span span{
+  font-size: 9px;
   }
 
   /* changes flex basis for card */
