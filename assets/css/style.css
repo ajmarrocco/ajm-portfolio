@@ -326,7 +326,7 @@ footer h2, footer h3{
   /* changes font size and margins of p in bio */
   .bio p {
     margin: 0px auto 30px auto;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   /* changes a img width in icon */
@@ -369,7 +369,7 @@ footer h2, footer h3{
  
   /* font size of span span */
   .run-buddy h3 span span, .card h3 span span{
-  font-size: 9px;
+  font-size: 10px;
   }
 
   /* changes flex basis for card */
