@@ -1,7 +1,7 @@
 # AJM Portfolio
 
 ## Purpose
-A website to showcase deployed portfolio of work samples
+A website to showcase deployed portfolio of work samples. This contains my name, recent photo, links to sections of my work with titled images and my contact information.  This website is also has a responsive layout tjat adapts to various screen sizes.
 
 ## Built With
 * HTML
@@ -15,6 +15,6 @@ Made by Anthony Marrocco
 
 ## Image
 
-![screenshot](assets/images/screencapture-127-0-0-1-5500-index-html-2021-12-27-20_27_34.png)
+![screenshot](assets/images/webPageSnapshot.png)
 
 ### &copy; Anthony Marrocco
