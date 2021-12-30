@@ -48,7 +48,7 @@ header h1 {
   margin: 5px;
 }
 
-/* shadow around h1 a in header*/
+/* styling around h1 a in header*/
 header h1 a{
   text-shadow: var(--red-shadow);
   text-decoration: none;
@@ -60,7 +60,6 @@ header h1 a{
 /* nav margin size */
 header nav {
   margin: 15px 20px; 
-  /* float: right; */
 }
 
 /* spacing for nav ul*/
@@ -71,7 +70,7 @@ header nav ul {
   list-style: none;
 }
 
-/* Sizing and position for ul and li for the nav */
+/* styling for nav ul li a for the header */
 header nav ul li a {
   margin: 0 20px;
   padding: 5px 15px;
@@ -81,22 +80,21 @@ header nav ul li a {
   text-shadow: var(--small-red-shadow);
 }
 
-/* Adds background for ul and li for the nav when it is hovered by mouse */
+/* adds background for nav ul li a for the header when it is hovered by mouse */
 header nav ul li a:hover {
   background: var(--primary-color);
   color: var(--secondary-color);
   border-radius: 50px;
-  text-shadow: var(--small-red-shadow);
 }
 
-/* Styling for h2 in bio and port */
+/* styling for h2 in bio, port, contact-info, resume */
 .bio h2, .port h2, .contact-info h2, .resume h2{ 
   text-align: center;
   margin: 35px auto 10px auto;
   font-size: 26px;
 }
 
-/* Shadow for h2 in bio and contact-info */
+/* shadow for h2 in bio and contact-info */
 .bio h2, .contact-info h2{
   text-shadow: var(--blue-shadow);
 }
@@ -133,12 +131,12 @@ header nav ul li a:hover {
   width: 75%;
 }
 
-/* Shadow for h2 in port and resume */
+/* shadow for h2 in port and resume */
 .port h2, .resume h2{
   text-shadow: var(--red-shadow);
 }
 
-/* So margins aren't clickable in run buddy image */
+/* so margins aren't clickable in run buddy image */
 .run-buddy { 
   text-align: center;
 }
@@ -161,12 +159,12 @@ header nav ul li a:hover {
   border-radius: var(--border-rad);
 }
 
-/* font size of span span */
+/* font size of span span so it is a different size than header */
 .run-buddy h3 span span, .card h3 span span{
   font-size: 16px;
 }
 
-/* border around img in run-buddy and card */
+/* border around a img in run-buddy and card */
 .run-buddy a img, .card a img{
   border-style: solid;
   border-width: var(--border-width);
@@ -174,7 +172,7 @@ header nav ul li a:hover {
   border-color: var(--tertiary-color);
 }
 
-/* styling img in just run-buddy */
+/* styling a img in just run-buddy */
 .run-buddy a img { 
   margin: 0px auto 10px auto;
   width: 75%;
@@ -286,19 +284,19 @@ footer h2, footer h3{
     width: 40%;
   }
   
-  /* changes size of p in bio */
+  /* changes font size and margins of p in bio */
   .bio p {
     margin: 0px auto 30px auto;
     font-size: 16px;
   }
 
-  /* font size of span span */
+  /* font size of h3 */
   .run-buddy h3, .card h3 {
     font-size: 16px;
     top: 35px;
   }
 
-  /* font size of span span */
+  /* font size of span span in h3 */
   .run-buddy h3 span span, .card h3 span span{
   font-size: 12px;
   }
@@ -312,7 +310,6 @@ footer h2, footer h3{
   .card a img{
     width: 300px;
   }
-  
 }
   
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -326,7 +323,7 @@ footer h2, footer h3{
     margin: 0;
   } 
 
-  /* changes size of p in bio */
+  /* changes font size and margins of p in bio */
   .bio p {
     margin: 0px auto 30px auto;
     font-size: 12px;
@@ -353,7 +350,7 @@ footer h2, footer h3{
     text-align: center;
   }
 
-  /* font size for h1 a in header */
+  /* font size and text shadow for h1 a in header */
   header h1 a{
     font-size: 26px;
     text-shadow: var(--small-red-shadow);
@@ -362,10 +359,9 @@ footer h2, footer h3{
   /* changes shadow and margin in nav ul li a in header */
   header nav ul li{
     padding-bottom: 15px;
-    /* margin: 0; */
   }
 
-  /* changes h3 font size for card */
+  /* changes h3 font size and position for card */
   .run-buddy h3, .card h3 { 
     font-size: 12px;
     top: 30px;
