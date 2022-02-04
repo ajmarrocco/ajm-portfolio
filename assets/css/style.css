@@ -137,12 +137,12 @@ header nav ul li a:hover {
 }
 
 /* so margins aren't clickable in run buddy image */
-.run-buddy { 
+.space-sounds { 
   text-align: center;
 }
 
-/* styling of h3 in run-buddy and card */
-.run-buddy h3, .card h3 { 
+/* styling of h3 in space-sounds and card */
+.space-sounds h3, .card h3 { 
   text-align: center;
   margin-top: 10px;
   font-size: 20px;
@@ -153,27 +153,27 @@ header nav ul li a:hover {
 }
 
 /* border around just h3 and not row */
-.run-buddy h3 span, .card h3 span{
+.space-sounds h3 span, .card h3 span{
   background: var(--tertiary-color);
   padding: 5px;
   border-radius: var(--border-rad);
 }
 
 /* font size of span span so it is a different size than header */
-.run-buddy h3 span span, .card h3 span span{
+.space-sounds h3 span span, .card h3 span span{
   font-size: 16px;
 }
 
-/* border around a img in run-buddy and card */
-.run-buddy a img, .card a img{
+/* border around a img in space-sounds and card */
+.space-sounds a img, .card a img{
   border-style: solid;
   border-width: var(--border-width);
   border-radius: var(--border-rad);
   border-color: var(--tertiary-color);
 }
 
-/* styling a img in just run-buddy */
-.run-buddy a img { 
+/* styling a img in just space-sounds */
+.space-sounds a img { 
   margin: 0px auto 10px auto;
   width: 75%;
 }
@@ -291,13 +291,13 @@ footer h2, footer h3{
   }
 
   /* font size of h3 */
-  .run-buddy h3, .card h3 {
+  .space-sounds h3, .card h3 {
     font-size: 16px;
     top: 35px;
   }
 
   /* font size of span span in h3 */
-  .run-buddy h3 span span, .card h3 span span{
+  .space-sounds h3 span span, .card h3 span span{
   font-size: 12px;
   }
 
@@ -362,24 +362,24 @@ footer h2, footer h3{
   }
 
   /* changes h3 font size and position for card */
-  .run-buddy h3, .card h3 { 
+  .space-sounds h3, .card h3 { 
     font-size: 12px;
     top: 30px;
   }
  
   /* font size of span span */
-  .run-buddy h3 span span, .card h3 span span{
+  .space-sounds h3 span span, .card h3 span span{
   font-size: 10px;
   }
 
   /* changes flex basis for card */
-  .card{
-    flex: 0 0 200px;
+  .space-sounds, .card{
+    flex: 0 0 250px;
   }
 
   /* changes a img size for card */
-  .card a img{
-    width: 200px;
+  .space-sounds a img, .card a img{
+    width: 250px;
   }
 
   /* changes a img size for icon */
