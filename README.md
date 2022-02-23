@@ -1,7 +1,7 @@
 # AJM Portfolio
 
 ## Purpose
-A website to showcase deployed portfolio of work samples. This contains my name, recent photo, links to sections of my work with titled images and my contact information.  This website is also has a responsive layout tjat adapts to various screen sizes.
+A website to showcase deployed portfolio of work samples. This contains my name, recent photo, links to sections of my work with titled images and my contact information.  This website is also has a responsive layout that adapts to various screen sizes.
 
 ## Built With
 * HTML
