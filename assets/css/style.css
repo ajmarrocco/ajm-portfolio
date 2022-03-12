@@ -1030,3 +1030,51 @@ nav a:hover {
     flex: 0 0 100%;
   }
 }
+
+/* wraps the link and spaces them */
+.link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+/* sizes a img in icon*/
+.icon a img{
+  width: 100px;
+}
+
+/* sizes a img in pdf-icon*/
+.pdf-icon a img{
+  width: 200px;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* changes a img width in icon */
+  .icon a img{
+    width: 75px;
+  }
+
+  /* changes a img width in icon */
+  .pdf-icon a img{
+    width: 150px;
+  }
+}
+  
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
+/* this will be applied on any screen smaller than 575px */
+@media screen and (max-width: 575px) {
+
+  /* changes a img size for icon */
+  .icon a img{
+    width: 50px;
+  }
+
+  /* changes a img size for pdf-icon */
+  .pdf-icon a img{
+    width: 100px;
+  }
+}
