@@ -84,7 +84,7 @@ nav {
   justify-content: center;
 }
 
-nav a:hover {
+nav a:hover, .word a:hover{
   color: var(--secondary);
   background-color: var(--dark);
 }
@@ -1040,8 +1040,8 @@ nav a:hover {
 }
 
 /* sizes a img in icon*/
-.icon a img{
-  width: 100px;
+.icon a h3{
+  color: var(--light);
 }
 
 /* sizes a img in pdf-icon*/
