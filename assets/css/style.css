@@ -159,6 +159,16 @@ header nav ul li a:hover {
   border-radius: var(--border-rad);
 }
 
+/* changes h3 font size and position for card */
+.space-sounds a { 
+  text-decoration: none;
+}
+
+/* changes h3 font size and position for card */
+.space-sounds a h3 { 
+  color: var(--primary-color)
+}
+
 /* font size of span span so it is a different size than header */
 .space-sounds h3 span span, .card h3 span span{
   font-size: 16px;
@@ -366,7 +376,7 @@ footer h2, footer h3{
     font-size: 12px;
     top: 30px;
   }
- 
+
   /* font size of span span */
   .space-sounds h3 span span, .card h3 span span{
   font-size: 10px;
