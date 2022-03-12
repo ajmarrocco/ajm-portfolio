@@ -1,155 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Anthony Marrocco Portfolio</title>
-        <link rel="stylesheet" href="./assets/css/style.css" />
-    </head>
-    <body>
-        <!-- navigation -->
-        <header>
-            <h1>
-                <a href="#">AJM Portfolio</a>
-            </h1>
-            <nav>
-                <!-- Unordered list element -->
-                <ul>
-                    <!-- List item element -->
-                    <li>
-                        <!-- Anchor element -->
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact-info">Contact Info</a>
-                    </li>
-                    <li>
-                        <a href="#resume">Resume</a>
-                    </li>
-                </ul>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container flex-row justify-space-between align-center py-3">
+            <h1 class="page-title text-secondary bg-dark py-2 px-3">Anthony Marrocco</h1>
+            <nav class="flex-row">
+                <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/ajmarrocco">GitHub</a>
             </nav>
-        </header>
+        </div>
+    </header>
+    <main class="container my-5">
 
-        <!-- about me and avator section -->
-        <section id="about-me" class="bio">
-            <h2>
-                Anthony Marrocco
-            </h2>
-            <img src="./assets/images/1520095826644.jpg" alt="Anthony Marrocco Headshot">
-            <p>
-                Aspiring software engineer with a background in mechanical engineering and physics. Currently in a program to receive
-                certification in Full Stack Web Development - Coding from Columbia University, expected to graduate in May 2022. Skills
-                include JavaScript, Node.js, Jest, Express.js, Inquirer.js, ORM, OOP and TDD. Recently, I applied my knowledge of
-                JavaScript, Node.js, Jest, and Inquirer.js, to create a program that generates an HTML with a team's basic information
-                so the manager has easy access to their emails and GitHub profiles. For each project, I employ my analytical skills in
-                concert with my ability to work through every detail. A project is never complete until it undergoes a close review for
-                ease of use and an impactful user experience. The goal of each project is to use my skills to create a well thought out
-                and engaging application. As a team player with a strong work ethic, I have a great desire to utilize my skills in an
-                accelerating, motivated team in the software engineering field to further my knowledge as well as provide a new
-                perspective of the current task.
-            </p>
+        <section class="my-3" id="about">
+            <h2 class="text-dark bg-primary p-2 display-inline-block">About Me</h2>
+            <p>Aspiring software engineer with a background in mechanical engineering and physics. Currently in a
+                program to receive certification in Full Stack Web Development - Coding from Columbia University,
+                expected to graduate in May 2022. Skills include JavaScript, Node.js, Jest, Express.js, Inquirer.js,
+                ORM, OOP and TDD. Recently, I applied my knowledge of JavaScript, Node.js, Jest, and Inquirer.js, to
+                create a program that generates an HTML with a team's basic information so the manager has easy access
+                to their emails and GitHub profiles. For each project, I employ my analytical skills in concert with my
+                ability to work through every detail. A project is never complete until it undergoes a close review for
+                ease of use and an impactful user experience. The goal of each project is to use my skills to create a
+                well thought out and engaging application. As a team player with a strong work ethic, I have a great
+                desire to utilize my skills in an accelerating, motivated team in the software engineering field to
+                further my knowledge as well as provide a new perspective of the current task.</p>
         </section>
 
-        <!-- portfolio section -->
-        <section id="portfolio" class="port">
-            <h2 class="line-break">
-                Portfolio
-            </h2>
-            <!-- run buddy image and link -->
-            <article class="space-sounds">
-                <h3><span>Space Sounds!:<span>HTML/CSS/JS</span></span></h3>
-                <a href="https://sarahhart1997.github.io/space-sounds/" target="_blank">
-                    <img src="./assets/images/homepage.png" alt="Space Sounds Home Page">
-                </a>
-                <a href="https://github.com/sarahhart1997/space-sounds" target="_blank">
-                    <h3>GitHub</h3>
-                </a>
-            </article>
-            <!-- div for other projects and images -->
-            <div class = "projects">
-                <article class = "card">
-                    <h3><span>Horiseon:<span>HTML</span></span></h3>
-                    <a href="https://ajmarrocco.github.io/Anthony-Marrocco-urban-octo-telegram/" target="_blank">
-                        <img src="./assets/images/horiseonImage.png" alt="Horiseon Home Page">
-                    </a>
-                </article>
-                <article class = "card">
-                    <h3><span>The Weeknd Page:<span>HTML/CSS</span></span></h3>
-                    <a href="https://ajmarrocco.github.io/css-practice/" target="_blank">
-                        <img src="./assets/images/theWeekndImage.png" alt="The Weeknd Home Page">
-                    </a>
-                </article>
-                <article class = "card">
-                    <h3><span>Robot Gladiators:<span>JS</span></span></h3>
-                    <a href="https://ajmarrocco.github.io/robot-gladiators/" target="_blank">
-                        <img src="./assets/images/robotGladiatorsImage.png" alt="Robot Gladiators Home Page">
-                    </a>
-                </article>
-                <article class = "card">
-                    <h3><span>Welcome Store:<span>CSS</span></span></h3>
-                    <a href="https://ajmarrocco.github.io/welcome-to-store/" target="_blank">
-                        <img src="./assets/images/WelcomeImage.png" alt="Welcome to the Store Home Page">
-                    </a>
-                </article>
-                <article class = "card">
-                    <h3><span>CSS Blog:<span>CSS</span></span></h3>
-                    <a href="https://ajmarrocco.github.io/css-blog/" target="_blank">
-                        <img src="./assets/images/01-resources-closed.png" alt="CSS Blog Home Page">
-                    </a>
-                </article>
-                <article class = "card">
-                    <h3><span>CSS Positioning:<span>CSS</span></span></h3>
-                    <a href="https://ajmarrocco.github.io/css-positioning/" target="_blank">
-                        <img src="./assets/images/image-1.png" alt="CSS Positioning Home Page">
-                    </a>
-                </article>
-            </div>
-        </section>            
-        <!-- contact-info section -->
-        <section id="contact-info" class="contact">
-            <h2 class="line-break">
-                Contact Information
-            </h2>
-            <!-- div for contact links and icons -->
-            <div class="link">
-                <div class = "icon">
-                    <a href="mailto:ajmarrocco@gmail.com">
-                        <img src="./assets/images/Gmail_icon_(2020).svg.png" alt="Email Icon">
-                    </a>
+
+        <section class="my-3" id="portfolio">
+            <h2 class="text-dark bg-primary p-2 display-inline-block">Work</h2>
+            <div class="flex-row justify-space-between">
+
+                <div class="col-12 mb-2 bg-dark text-light p-3">
+                    <h3 class="portfolio-item-title text-light">Space Sounds!</h3>
+                    <h5 class="portfolio-languages">
+                        Built With:
+                        JavaScript, HTML, CSS, Bootstrap
+                    </h5>
+                    <p>Space missions from companies such as NASA, SpaceX, Virgin Galactic and Blue Origin has made the
+                        desire to go to space increase exponentially over the past couple of years. We would like to
+                        make that dream realistic for everyone!</p>
+                    <a href="https://github.com/sarahhart1997/space-sounds" class="btn"><i
+                            class="fab fa-github mr-2"></i>View Project on GitHub</a>
                 </div>
-                <div class = "icon">
-                    <a href="https://www.linkedin.com/in/anthony-marrocco-420ab0123/" target="_blank">
-                        <img src="./assets/images/1024px-Linkedin_icon.svg.png" alt="LinkedIn Icon">
-                    </a>
+
+
+
+                <div class="col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column">
+                    <h3 class="portfolio-item-title text-light">Dynamic Code Quiz</h3>
+                    <h5 class="portfolio-languages">
+                        Built With:
+                        JavaScript, HTML, CSS
+                    </h5>
+                    <p>A website that creates a timed quiz of the fundamentals of JavaScript. This website will then
+                        store high scores to compare with your classmates.</p>
+                    <a href="https://ajmarrocco.github.io/ajm-code-quiz/" class="btn mt-auto"><i
+                            class="fab fa-github mr-2"></i>View Project on GitHub</a>
                 </div>
-                <div class = "icon">
-                    <a href="https://github.com/ajmarrocco" target="_blank">
-                        <img src="./assets/images/github.svg" alt="Github Icon">
-                    </a>
+
+                <div class="col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column">
+                    <h3 class="portfolio-item-title text-light">Weather Dashboard</h3>
+                    <h5 class="portfolio-languages">
+                        Built With:
+                        JavaScript, HTML, CSS, Bootstrap
+                    </h5>
+                    <p>A weather dashboard that allows you to see the current and future weather conditions and creates
+                        a search history for multiple cities using Open Weather Map API.</p>
+                    <a href="https://ajmarrocco.github.io/ajm-weather-dashboard/" class="btn mt-auto"><i
+                            class="fab fa-github mr-2"></i>View Project on GitHub</a>
                 </div>
+
+                <div class="col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column">
+                    <h3 class="portfolio-item-title text-light">Let's Note Get Carried Away</h3>
+                    <h5 class="portfolio-languages">
+                        Built With:
+                        JavaScript, HTML, CSS, ES6, Bootstrap, Node
+                    </h5>
+                    <p>A webpage that is able to write and save notes to organize my thoughts and keep track of tasks I
+                        need to complete.</p>
+                    <a href="https://github.com/ajmarrocco/lets-note-get-carried-away" class="btn mt-auto"><i
+                            class="fab fa-github mr-2"></i>View Project on GitHub</a>
+                </div>
+
+                <div class="col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column">
+                    <h3 class="portfolio-item-title text-light">Engineering My Dream Team Profile</h3>
+                    <h5 class="portfolio-languages">
+                        Built With:
+                        JavaScript, HTML, CSS, ES6, Bootstrap, Node
+                    </h5>
+                    <p>A program that generates an HTML with a team's basic information so the manager has the easy
+                        access to their emails and GitHub profiles.</p>
+                    <a href="https://github.com/ajmarrocco/engineering-my-dream-team-profile" class="btn mt-auto"><i
+                            class="fab fa-github mr-2"></i>View Project on GitHub</a>
+                </div>
+
             </div>
         </section>
 
-        <!-- resume section -->
-        <section id="resume" class="resume">
-            <h2 class="line-break">
-                Resume
-            </h2>
-            <!-- div for contact link and icon -->
-            <div class = "pdf-icon">
-                <a href="./assets/pdf/Anthony Marrocco Resume 2021.pdf" target="_blank">
-                    <img src="./assets/images/1200px-PDF_file_icon.svg.png" alt="PDF Icon">
-                </a>
-            </div>
-        </section>
+    </main>
+    <footer class="container text-center py-3">
+        <h3 class="text-dark">&copy; 2022 by Anthony Marrocco 🌌</h3>
+    </footer>
+</body>
 
-        <!-- footer section -->
-        <footer>
-            <h2>&copy; Anthony Marrocco</h2> 
-            <h3>🌌 Thank You!</h3>           
-        </footer>
-    </body>
 </html>
