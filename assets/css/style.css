@@ -84,9 +84,13 @@ nav {
   justify-content: center;
 }
 
-nav a:hover, .word a:hover{
+nav a:hover {
   color: var(--secondary);
   background-color: var(--dark);
+}
+
+.contact div div:hover{
+  background-color: var(--primary);
 }
 
 .page-title {
