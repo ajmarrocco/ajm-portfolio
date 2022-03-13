@@ -1,9 +1,9 @@
 :root {
-  --primary: #9dbdc6;
-  --secondary: #daeaef;
+  --primary: #0958ad;
+  --secondary: #a2a1eb;
   --tertiary: #ff3d2e;
-  --light: #ffffff;
-  --dark: #272f32;
+  --light: #ffc107;
+  --dark: #291057;
   /* --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -35,7 +35,10 @@
 }
 
 body {
-  background-color: var(--secondary);
+  background-image: url("../images/background-copy.jpg"); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
   margin: 0;
   padding: 0;
   font-family: 'Public Sans', sans-serif;
