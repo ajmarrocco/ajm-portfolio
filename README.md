@@ -15,6 +15,6 @@ Made by Anthony Marrocco
 
 ## Image
 
-![screenshot](assets/images/screencapture-file-C-Users-ajmar-OneDrive-Desktop-BootCamp-Module2-Challenge-ajm-portfolio-index-html-2022-03-13-12_35_47.png)
+![screenshot](assets/images/screencapture-ajmarrocco-github-io-ajm-portfolio-2022-03-30-20_14_45.png)
 
 ### &copy; Anthony Marrocco
